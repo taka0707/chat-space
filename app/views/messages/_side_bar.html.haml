@@ -1,0 +1,12 @@
+.Side-bar
+  .Side-bar__user-name
+    .Side-bar__user-name__top-items
+      %p.Side-bar__user-name__top-items__name USER NAME
+      %ul.Side-bar__user-name__top-items__top-icons
+        %li
+          = link_to "#", class: "Side-bar__user-name__top-items__top-icons__btn" do
+            = icon('far', 'edit')
+        %li
+          = link_to "#", class: "Side-bar__user-name__top-items__top-icons__btn" do
+            = icon('fa', 'cog')
+  .Side-bar__group-list
