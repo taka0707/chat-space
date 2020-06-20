@@ -55,12 +55,11 @@
       &__group-name {
         color: #ffffff;
         font-size: 16px;
-        font-weight: bold;
+        list-style: none;
       }
       &__new-message {
         color: #ffffff;
         font-size: 15px;
-        font-weight: bold;
         margin: 5px 0 40px 0;
       }
     }
@@ -86,6 +85,8 @@
       &__group-member {
         color: #999999;
         font-size: 12px;
+        display: flex;
+        list-style: none;
       }
     }
     &__edit-btn {
@@ -106,6 +107,24 @@
   &__message-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    padding: 35px 0 0 40px;
+    &__message-contents {
+      display: flex;
+      margin-bottom: 12px;
+      &__user-name {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__create-time {
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    &__message-box {
+      margin-bottom: 46px;
+    }
   }
   &__message-form {
     height: 90px;
