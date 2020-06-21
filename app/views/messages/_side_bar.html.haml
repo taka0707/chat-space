@@ -11,9 +11,11 @@
             = icon('fa', 'cog')
   .group-list
     .group-list__user-group
-      .group-list__user-group__group-name Grop 1
+      = link_to "#", class: "group-list__user-group__group-name" do
+        Group 1
       .group-list__user-group__new-message まだメッセージはありません
     .group-list__user-group
-      .group-list__user-group__group-name Grop 2
+      = link_to "#", class: "group-list__user-group__group-name" do
+        Group 2
       .group-list__user-group__new-message まだメッセージはありません
     
