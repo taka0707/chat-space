@@ -1,19 +1,26 @@
 .Chat-main
-  .Chat-main__group-info
-    .Chat-main__group-info__group-items
-      %h2.Chat-main__group-info__group-items__current-group Grop 1
-      %ul.Chat-main__group-info__group-items__group-member
+  .group-info
+    .group-info__group-items
+      %h2.group-info__group-items__current-group Grop 1
+      %ul.group-info__group-items__group-member
         Menber :
-        %li.Chat-main__group-info__group-items__group-member taka
-    .Chat-main__group-info__edit-btn
+        %li.group-info__group-items__group-member taka
+    .group-info__edit-btn
       = link_to "Edit", "#", class: "edit-btn"
-  .Chat-main__message-list
-    .Chat-main__message-list__message-contents
-      %h2.Chat-main__message-list__message-contents__user-name taka
-      %p.Chat-main__message-list__message-contents__create-time 2020/06/20 10:00
-    %p.Chat-main__message-list__message-box test message 1
-    .Chat-main__message-list__message-contents
-      %h2.Chat-main__message-list__message-contents__user-name taka
-      %p.Chat-main__message-list__message-contents__create-time 2020/06/20 11:00
-    %p.Chat-main__message-list__message-box test message 2
-  .Chat-main__message-form
+  .message-list
+    .message-list__message-contents
+      .message-list__message-contents__user-name taka
+      .message-list__message-contents__date 2020/06/20 10:00
+    %p.message-list__message-box test message 1
+    .message-list__message-contents
+      .message-list__message-contents__user-name taka
+      .message-list__message-contents__date 2020/06/20 11:00
+    %p.message-list__message-box test message 2
+  .message-form
+    %form.message-form__box
+      .message-form__box__contents
+        %input.message-form__box__contents__input-text{"placeholder": "type a message", "type": "text"}
+        %label{class: "input-image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "file"}
+      %input.message-form__box__send-btn{"name": "commit", "type": "submit", "value": "Send"}
