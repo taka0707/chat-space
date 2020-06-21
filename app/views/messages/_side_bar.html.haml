@@ -1,19 +1,19 @@
 .Side-bar
-  .Side-bar__user-name
-    .Side-bar__user-name__top-items
-      %p.Side-bar__user-name__top-items__name taka
-      %ul.Side-bar__user-name__top-items__top-icons
+  .user-name
+    .user-name__top-items
+      %p.user-name__top-items__name taka
+      %ul.user-name__top-items__top-icons
         %li
-          = link_to "#", class: "Side-bar__user-name__top-items__top-icons__btn" do
+          = link_to "#", class: "edit-btn" do
             = icon('far', 'edit')
         %li
-          = link_to "#", class: "Side-bar__user-name__top-items__top-icons__btn" do
+          = link_to "#", class: "cog-btn" do
             = icon('fa', 'cog')
-  .Side-bar__group-list
-    .Side-bar__group-list__user-group
-      .Side-bar__group-list__user-group__group-name Grop 1
-      .Side-bar__group-list__user-group__new-message まだメッセージはありません
-    .Side-bar__group-list__user-group
-      .Side-bar__group-list__user-group__group-name Grop 2
-      .Side-bar__group-list__user-group__new-message まだメッセージはありません
+  .group-list
+    .group-list__user-group
+      .group-list__user-group__group-name Grop 1
+      .group-list__user-group__new-message まだメッセージはありません
+    .group-list__user-group
+      .group-list__user-group__group-name Grop 2
+      .group-list__user-group__new-message まだメッセージはありません
     

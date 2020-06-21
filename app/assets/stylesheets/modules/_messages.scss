@@ -11,7 +11,7 @@
   width: 300px;
   background-color: #253141;
   height: 100vh;
-  &__user-name {
+  .user-name {
     height: 100px;
     background-color: #253141;
     display: flex;
@@ -33,11 +33,12 @@
         justify-content: flex-end;
         align-items: center;
         text-decoration: none;
+        ul {
+          width: 60px;
+          list-style: none;
+        }
       }
-      ul {
-        width: 60px;
-        list-style: none;
-      }
+      
       .far {
         margin-right: 5px;
         color: #ffffff;
@@ -47,10 +48,11 @@
       }
     }
   }
-  &__group-list {
+  .group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px;
+    overflow: scroll;
     &__user-group {
       padding: 20px 0 40px;
       &__group-name {
@@ -73,11 +75,12 @@
 }
   .group-info {
     height: 100px;
-    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #eee;
     &__group-items {
-      margin: 35px 0 0 40px;
+      margin-top: 35px;
       &__current-group {
         color: #333333;
         font-size: 20px;
@@ -88,21 +91,20 @@
         font-size: 12px;
         display: flex;
         list-style: none;
+        &__member-name {
+          padding-right: 5px;
+        }
       }
     }
-    &__edit-btn {
+    .edit-btn {
       height: 40px;
-      width: 72px;
+      line-height: 40px;
+      display: block;
       border: 1px solid #38aef0;
-      margin: 28px 40px 28px 0;
-      display: flex;
-      align-items: center;
+      margin-top: 28px;
       padding: 0 20px;
-      a {
-        font-size: 16px;
-        color: #38aef0;
-        text-decoration: none;
-      }
+      text-decoration: none;
+      color: #38aef0;
     }
   }
   .message-list {
