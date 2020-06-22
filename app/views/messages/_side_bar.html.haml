@@ -1,13 +1,14 @@
 .Side-bar
   .user-name
     .user-name__top-items
-      %p.user-name__top-items__name taka
+      %p.user-name__top-items__name
+        = current_user.name
       %ul.user-name__top-items__top-icons
         %li
           = link_to "#", class: "edit-btn" do
             = icon('far', 'edit')
         %li
-          = link_to "#", class: "cog-btn" do
+          = link_to edit_user_path(current_user), class: "cog-btn" do
             = icon('fa', 'cog')
   .group-list
     .group-list__user-group
