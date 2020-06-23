@@ -42,9 +42,11 @@
       .far {
         margin-right: 5px;
         color: #ffffff;
+        font-size: 16px;
       }
       .fa {
         color: #ffffff;
+        font-size: 16px;
       }
     }
   }
@@ -55,7 +57,7 @@
     overflow: scroll;
     &__user-group {
       padding: 20px 0 40px;
-      &__group-name {
+      a {
         color: #ffffff;
         font-size: 15px;
         text-decoration: none;
