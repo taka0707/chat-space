@@ -114,6 +114,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px 0;
+    overflow: scroll;
     &__message-contents {
       display: flex;
       margin-bottom: 12px;
